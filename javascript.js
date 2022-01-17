@@ -48,6 +48,8 @@ const funcOperator = function (operator) {
         displayValue.textContent = valueB + ' ' + valueOp;
         bValueDisplay.textContent = valueB;
         console.log('funcOp called, operation done then valOp assigned, valA = "" ')
+  } else if (valueA == ''){
+    console.log('no operator chosen')
   } else if (valueB != '') {
     valueOp = operator;
     console.log(`Operation = ${valueOp} || Value A = ${valueA} || Value B = ${valueB}`)
@@ -117,8 +119,8 @@ function operation (operator, a , b) {
            return multiply(a,b)
             
      case '÷': 
-        if (valueA === 0) {
-            displayValue.textContent = 'Fuck you'
+        if (valueA == '0') {
+            bValueDisplay.textContent = 'Fuck you'
             return;
         } else {
            return divide(a, b)
