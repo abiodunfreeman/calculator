@@ -1,54 +1,49 @@
 * {
     box-sizing: border-box;
-    margin:0px;
+    margin: 0px;
     padding: 0px;
+    color:whitesmoke
 }
 body {
-    display: flex;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    background-color: black;
     justify-content: center;
-    align-items: center;
-    
 }
 .container {
-display:flex;
-flex-direction: column;
-justify-content: flex-end;
-border: 2px dashed navy;
-width: 20em;
-height: 30em;
--webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
--moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-
+    border: purple 3px solid;
+    display:flex;
+    flex-direction:column;
+    width:23em;
+    margin:0px auto 0px auto;
+    
 }
-.displayValueDiv {
-    text-align: right;
-    border: 3px solid green;
-    height: 30px;
+.btnContainer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
-.bValueDiv {
-    text-align: right;
-    border: 1px orangered dashed;
-    margin : 2px;
+#clrDel {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 button {
     padding:20px;
     cursor: pointer;
 }
+#displayValue, #bValue {
+    text-align: right;
+}
+.btnOp {
+    background-color: #461111;
+    color:whitesmoke;
+}
 .btnsNum {
+    background-color: #A13333;
+    color:whitesmoke;
     
 }
-.btnContainer {
-    border: red 1px solid;
-    margin: 4px;
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-
-}
-
-.btnOp{
-    background-color: lightslategray;
-}
-#clrDel {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
+#clear, #delete {
+    background-color: #B3541E;
+    color:whitesmoke;
 }
